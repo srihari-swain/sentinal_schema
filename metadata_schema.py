@@ -9,6 +9,7 @@ module_dict= {
     age = db.IntField()
     gender = db.StringField()
     zone_id = db.ListField(db.StringField())
+    store = db.StringField()
 }
     
     
@@ -26,6 +27,7 @@ class Metadata(db.Document):
     frame_number = db.IntField()
     camera = db.ObjectIdField()
     time_stamp = db.StringField()
+    image_path = db.StringField()
     fps = db.IntField()
     module = db.DictField()
     feature = db.DictField()
